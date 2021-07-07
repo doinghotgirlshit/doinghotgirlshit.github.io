@@ -1,0 +1,67 @@
+/* 
+ * This stylesheet is written by me. And I'm not, by any means, a designer.
+ * I've tried my best to make the site nice and accessible, but it can still
+ * be not nice or inaccessible.
+ * 
+ * If you know how to make this site better or what's wrong with it, please 
+ * make contribution on github: 
+ * https://github.com/doinghotgirlshit/doinghotgirlshit.github.io
+ * or write to me:
+ * twitter: https://twitter.com/maybewaffle
+ * mail: mailto:waffle.lapkin@gmail.com
+ * telegram: https://t.me/wafflelapkin
+ */
+
+html {
+    background-color: #ffe7e5;
+}
+
+body {
+    font-family: source sans pro,helvetica neue,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+
+    margin: 6 auto;
+    width: 1200px;
+}
+
+a {
+    color: #07a;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    padding: 6px;
+}
+
+@media screen and (max-width: 1200px) {
+    body { width: 100%; }
+}
+
+@media screen and (max-width: 600px) {
+    .pictures { flex-direction: column; }
+    img { width: 95%; }
+}
+
+footer {
+    margin: 12 auto;
+    padding: 12;
+    text-align: center;
+}
